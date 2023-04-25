@@ -1,8 +1,3 @@
-# latex-docker
-
-vscode + full overleaf + docker
-
-```yaml
 # RAW https://github.com/overleaf/overleaf/blob/main/docker-compose.yml
 services:
     sharelatex:
@@ -32,11 +27,5 @@ services:
         environment:
             # For vscode
             PASSWORD: 123456
-```
 
-Reference
-
-+ https://github.com/overleaf/overleaf
-+ https://github.com/Tuetenk0pp/sharelatex-full
-+ https://github.com/coder/code-server
 

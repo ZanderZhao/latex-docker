@@ -1,0 +1,10 @@
+# based zanderzhao/latex-docker:overleafull-latest
+# this zanderzhao/latex-docker:overleafull-cn-latest
+FROM zanderzhao/latex-docker:overleafull-latest
+
+SHELL ["/bin/bash", "-cx"]
+
+# CN language
+RUN apt-get install latex-cjk-all -y
+
+

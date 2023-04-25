@@ -1,0 +1,58 @@
+name: Docker build and push release
+
+on:
+  release:
+    types: [published]
+  schedule:
+    - cron: '8 8 8 * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Get current date
+      id: date
+      run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+    - name: Login to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKER_USER }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+    - name: Build and push 0
+      uses: docker/build-push-action@v4
+      with:
+        push: true
+        tags: zanderzhao/latex-docker:overleaf-latest, zanderzhao/latex-docker:overleaf-${{ github.ref_name }}-${{ steps.date.outputs.date }}
+        file: docker/use/0Dockerfile
+    - name: Build and push 1
+      uses: docker/build-push-action@v4
+      with:
+        push: true
+        tags: zanderzhao/latex-docker:overleaf-vscode-latest, zanderzhao/latex-docker:overleaf-vscode-${{ github.ref_name }}-${{ steps.date.outputs.date }}
+        file: docker/use/1Dockerfile.code
+    - name: Build and push 2
+      uses: docker/build-push-action@v4
+      with:
+        push: true
+        tags: zanderzhao/latex-docker:overleafull-latest, zanderzhao/latex-docker:overleafull-${{ github.ref_name }}-${{ steps.date.outputs.date }}
+        file: docker/use/2Dockerfile.full
+    - name: Build and push 3
+      uses: docker/build-push-action@v4
+      with:
+        push: true
+        tags: zanderzhao/latex-docker:overleafull-vscode-latest, zanderzhao/latex-docker:overleafull-vscode-${{ github.ref_name }}-${{ steps.date.outputs.date }}
+        file: docker/use/3Dockerfile.full.code
+    - name: Build and push 4
+      uses: docker/build-push-action@v4
+      with:
+        push: true
+        tags: zanderzhao/latex-docker:overleafull-cn-latest, zanderzhao/latex-docker:overleafull-cn-${{ github.ref_name }}-${{ steps.date.outputs.date }}
+        file: docker/use/4Dockerfile.full.cn
+    - name: Build and push 5
+      uses: docker/build-push-action@v4
+      with:
+        push: true
+        tags: zanderzhao/latex-docker:overleafull-vscode-cn-latest, zanderzhao/latex-docker:overleafull-vscode-cn-${{ github.ref_name }}-${{ steps.date.outputs.date }}
+        file: docker/use/5Dockerfile.full.cn.code
+
+

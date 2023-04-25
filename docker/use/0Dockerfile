@@ -1,0 +1,3 @@
+# based on the work from rigon (https://github.com/rigon/docker-sharelatex-full)
+# this name zanderzhao/latex-docker:overleaf-latest
+FROM sharelatex/sharelatex:latest
