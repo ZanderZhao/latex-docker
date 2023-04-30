@@ -8,7 +8,7 @@
 [![Docker Stars](https://img.shields.io/docker/stars/zanderzhao/latex-docker)](https://hub.docker.com/r/zanderzhao/latex-docker)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/zanderzhao/latex-docker)](https://hub.docker.com/r/zanderzhao/latex-docker)
 
-A docker image of the latex environment, with support for pre-installing the latest full environment of overleaf and vscode(code-server)
+A **docker** image of the **latex environment**, with support for pre-installing the latest **full environment** of **overleaf** and **vscode**(code-server).
 
 > vscode + full overleaf + docker
 
@@ -72,11 +72,11 @@ services:
 > more tags: <https://hub.docker.com/r/zanderzhao/latex-docker/tags>
 
 
-# Step 3: Setup
+### Step 3: Setup
 
 use `docker-compose up -d` setup
 
-# Step 4: Open from Browser
+### Step 4: Open from Browser
 
 The overleaf will server at 80(default port), <http://127.0.0.1:80>
 
