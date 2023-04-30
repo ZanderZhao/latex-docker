@@ -1,6 +1,16 @@
 # latex-docker
 
-vscode + full overleaf + docker
+[![GitHub license](https://img.shields.io/github/license/ZanderZhao/latex-docker)](https://github.com/ZanderZhao/latex-docker/blob/master/LICENSE)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ZanderZhao/latex-docker/test-build.yml)](https://github.com/ZanderZhao/latex-docker/actions/workflows/test-build.yml)
+[![GitHub issues](https://img.shields.io/github/issues/ZanderZhao/latex-docker)](https://github.com/ZanderZhao/latex-docker/issues)
+[![Docker Pulls](https://img.shields.io/docker/pulls/ZanderZhao/latex-docker)](https://hub.docker.com/r/ZanderZhao/latex-docker)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/zanderzhao/latex-docker)](https://hub.docker.com/r/zanderzhao/latex-docker)
+[![Docker Stars](https://img.shields.io/docker/stars/zanderzhao/latex-docker)](https://hub.docker.com/r/zanderzhao/latex-docker)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/zanderzhao/latex-docker)](https://hub.docker.com/r/zanderzhao/latex-docker)
+
+A docker image of the latex environment, with support for pre-installing the latest full environment of overleaf and vscode(code-server)
+
+> vscode + full overleaf + docker
 
 
 ## Feature
@@ -59,6 +69,9 @@ services:
             PASSWORD: 123456
 ```
 
+> more tags: <https://hub.docker.com/r/zanderzhao/latex-docker/tags>
+
+
 # Step 3: Setup
 
 use `docker-compose up -d` setup
@@ -80,6 +93,6 @@ The code-server(vscode) will server at 8090(default port), <http://127.0.0.1:809
 ## Reference
 
 + https://github.com/overleaf/overleaf
-+ https://github.com/Tuetenk0pp/sharelatex-full
++ https://github.com/ZanderZhao/latex-docker
 + https://github.com/coder/code-server
 

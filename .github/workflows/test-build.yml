@@ -3,7 +3,12 @@ name: test build
 on:
   pull_request:
     paths:
-      - Dockerfile
+      - docker/use/0Dockerfile
+      - docker/use/1Dockerfile.code
+      - docker/use/0Dockerfile.full
+      - docker/use/0Dockerfile.full.code
+      - docker/use/0Dockerfile.full.cn
+      - docker/use/0Dockerfile.full.cn.code
   workflow_dispatch:
   
 jobs:
