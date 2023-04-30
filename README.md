@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/ZanderZhao/latex-docker)](https://github.com/ZanderZhao/latex-docker/blob/master/LICENSE)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ZanderZhao/latex-docker/test-build.yml)](https://github.com/ZanderZhao/latex-docker/actions/workflows/test-build.yml)
 [![GitHub issues](https://img.shields.io/github/issues/ZanderZhao/latex-docker)](https://github.com/ZanderZhao/latex-docker/issues)
-[![Docker Pulls](https://img.shields.io/docker/pulls/ZanderZhao/latex-docker)](https://hub.docker.com/r/ZanderZhao/latex-docker)
+[![Docker Pulls](https://img.shields.io/docker/pulls/zanderzhao/latex-docker)](https://hub.docker.com/r/zanderzhao/latex-docker)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/zanderzhao/latex-docker)](https://hub.docker.com/r/zanderzhao/latex-docker)
 [![Docker Stars](https://img.shields.io/docker/stars/zanderzhao/latex-docker)](https://hub.docker.com/r/zanderzhao/latex-docker)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/zanderzhao/latex-docker)](https://hub.docker.com/r/zanderzhao/latex-docker)
