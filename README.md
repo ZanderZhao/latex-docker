@@ -1,6 +1,6 @@
 # latex-docker
 
-[![GitHub license](https://img.shields.io/github/license/ZanderZhao/latex-docker)](https://github.com/ZanderZhao/latex-docker/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/ZanderZhao/latex-docker)](https://github.com/ZanderZhao/latex-docker/blob/main/LICENSE)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ZanderZhao/latex-docker/test-build.yml)](https://github.com/ZanderZhao/latex-docker/actions/workflows/test-build.yml)
 [![GitHub issues](https://img.shields.io/github/issues/ZanderZhao/latex-docker)](https://github.com/ZanderZhao/latex-docker/issues)
 [![Docker Pulls](https://img.shields.io/docker/pulls/zanderzhao/latex-docker)](https://hub.docker.com/r/zanderzhao/latex-docker)
@@ -78,9 +78,13 @@ use `docker-compose up -d` setup
 
 ### Step 4: Open from Browser
 
-The overleaf will server at 80(default port), <http://127.0.0.1:80>
+The overleaf will server at 80(default port), 
+go to <http://127.0.0.1:80/launchpad>  page to set up your first admin user.
 
-The code-server(vscode) will server at 8090(default port), <http://127.0.0.1:8090>
+
+The code-server(vscode) will server at 8090(default port), 
+go to <http://127.0.0.1:8090> page to use, 
+the password is which you set in **Step 2** `environment` > `PASSWORD`, default demo set 123456
 
 
 ## TODO

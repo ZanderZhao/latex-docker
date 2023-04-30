@@ -4,12 +4,11 @@ FROM zanderzhao/latex-docker:overleaf-latest
 
 SHELL ["/bin/bash", "-cx"]
 
-
 # CODE Server
-RUN curl -fsSL https://code-server.dev/install.sh | sh
-RUN mkdir -p /var/lib/codeserver
-# ENTRYPOINT "/usr/bin/code-server" "/var/lib/codeserver" "--bind-addr=0.0.0.0:8090" & "/sbin/my_init"
+RUN curl -fsSL https://raw.githubusercontent.com/ZanderZhao/latex-docker/main/docker/use/src/install_code.sh | sh
+
 ENTRYPOINT "/usr/bin/code-server" "/var/lib/codeserver" "--bind-addr=0.0.0.0:8090" "--config=/root/.config/code-server/.config" & "/sbin/my_init"
+
 
 
 
