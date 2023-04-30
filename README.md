@@ -1,7 +1,7 @@
 # latex-docker
 
 [![GitHub license](https://img.shields.io/github/license/ZanderZhao/latex-docker)](https://github.com/ZanderZhao/latex-docker/blob/main/LICENSE)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ZanderZhao/latex-docker/test-build.yml)](https://github.com/ZanderZhao/latex-docker/actions/workflows/test-build.yml)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ZanderZhao/latex-docker/build-and-push-release.yml)](https://github.com/ZanderZhao/latex-docker/actions/workflows/build-and-push-release.yml)
 [![GitHub issues](https://img.shields.io/github/issues/ZanderZhao/latex-docker)](https://github.com/ZanderZhao/latex-docker/issues)
 [![Docker Pulls](https://img.shields.io/docker/pulls/zanderzhao/latex-docker)](https://hub.docker.com/r/zanderzhao/latex-docker)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/zanderzhao/latex-docker)](https://hub.docker.com/r/zanderzhao/latex-docker)
@@ -97,6 +97,6 @@ the password is which you set in **Step 2** `environment` > `PASSWORD`, default 
 ## Reference
 
 + https://github.com/overleaf/overleaf
-+ https://github.com/ZanderZhao/latex-docker
++ https://github.com/Tuetenk0pp/sharelatex-full
 + https://github.com/coder/code-server
 
