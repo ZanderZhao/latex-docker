@@ -2,6 +2,18 @@
 
 vscode + full overleaf + docker
 
+
+## Feature
+
++ Update the latest overleaf
+
++ Complete tex environment
+
++ With code-server for online use of vscode
+
++ With Chinese language package
+
+
 ```yaml
 # RAW https://github.com/overleaf/overleaf/blob/main/docker-compose.yml
 services:
@@ -20,10 +32,10 @@ services:
         # 5.overleaf-full vscode cn-fonts
         image: zanderzhao/latex-docker:overleafull-vscode-cn-latest
         ports:
-            # For overleaf
+            # For overleaf, the previous 80 can change to others ports, eg: 8081:80, overleaf will server in port 8081 local
             - 80:80
-            # For vscode
-            - 8080:8090
+            # For vscode, the previous 8090 can change to others ports, eg: 8082:8090, vscode will server in port 8082 local
+            - 8090:8090
         volumes:
             # For overleaf 
             - ./sharelatex_data:/var/lib/sharelatex
@@ -34,7 +46,14 @@ services:
             PASSWORD: 123456
 ```
 
-Reference
+## TODO
+
++ [code-server for multiple users](https://github.com/coder/code-server/issues/5906)
+
++ [code-server + latex workshop pdf display](https://github.com/James-Yu/LaTeX-Workshop/issues/3760)
+
+
+## Reference
 
 + https://github.com/overleaf/overleaf
 + https://github.com/Tuetenk0pp/sharelatex-full
